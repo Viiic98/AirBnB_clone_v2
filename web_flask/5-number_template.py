@@ -37,7 +37,7 @@ def n_variable(n):
         to return if n is an integer
     """
     if type(n) is int:
-        return "is a number {:d}".format(n)
+        return "{:d} is a number".format(n)
 
 
 @app.route('/number_template/<int:n>', strict_slashes=False)

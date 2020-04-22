@@ -37,7 +37,7 @@ def n_variable(n):
         to return if n is an integer
     """
     if type(n) is int:
-        return "is a number {:d}".format(n)
+        return "{:d} is a number".format(n)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
