@@ -6,6 +6,10 @@ app = Flask(__name__)
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb_live():
+    """ Load States, Amenities and Places 
+
+        Return: Template 100-hbnb.html
+    """
     states = storage.all(State).values()
     amenities = storage.all(Amenity).values()
     places = storage.all(Place).values()
